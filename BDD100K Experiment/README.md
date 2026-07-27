@@ -12,6 +12,8 @@ experts and the fused MoE object-presence predictions.
 Because BDD100K does not provide a ground-truth expert-routing label, the clean
 router's top-1 expert is used as the reference decision for router attacks.
 
+
+
 ## Files in this repository
 
 ```text
@@ -35,8 +37,25 @@ the model architecture, dataset helpers, and evaluation functions from them.
 - `bdd100k_moe_transfer_attack.py`: trains a surrogate router and transfers a
   PGD adversarial example to the target router.
 
-The old `decision-bdd100k-duplicate.py` file is not required; it is a duplicate
-experimental Boundary Attack variant.
+
+
+
+
+## Required baseline assets
+
+For the initial model training, testing, and data-preprocessing implementation,
+refer to the [baseline CSA-GMoE
+repository](https://github.com/badjie90/CSA-GMoE-Context-Aware-Multi-Label-Object-Presence-Prediction-in-Autonomous-Driving.git).
+Those baseline scripts are essential dependencies of this project: they define
+the model architecture, construct the fixed metadata splits, train the original
+MoE checkpoint, and provide evaluation utilities reused by the attack scripts.
+Use both repositories to obtain the complete pipeline from data preparation and
+baseline training through adversarial evaluation.
+
+Run the baseline repository first. This project requires:
+
+
+
 
 ## Prerequisites from the baseline repository
 

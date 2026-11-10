@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite this software and the associated manuscript when using this implementation."
+type: software
+title: "Controlled Evaluation of Routing and Prediction Failures in Driving Mixture-of-Experts Models"
+authors:
+  - family-names: Badjie
+    given-names: Bakary
+  - family-names: Cecílio
+    given-names: José
+  - family-names: Casimiro
+    given-names: António
+version: 1.0.0
+date-released: 2026-11-10
+abstract: "Code, fixed cohort identifiers, configurations, and reference statistics for controlled black-box evaluation of driving mixture-of-experts models."

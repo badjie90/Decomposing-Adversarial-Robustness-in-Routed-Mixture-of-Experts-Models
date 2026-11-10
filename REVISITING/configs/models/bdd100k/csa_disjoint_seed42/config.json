@@ -1,0 +1,84 @@
+{
+  "amp_dtype": "float16",
+  "backbone_lr": 2e-05,
+  "backbone_name": "convnextv2_tiny.fcmae_ft_in1k",
+  "batch_size": 32,
+  "device": "cuda:0",
+  "early_stopping_min_delta": 0.0001,
+  "early_stopping_patience": 10,
+  "epochs": 100,
+  "expert_lr": 0.0001,
+  "grad_clip_norm": 1.0,
+  "head_lr": 0.0001,
+  "historical_split_audit": {
+    "dataset": "bdd100k",
+    "overlap": {
+      "train__test_fixed": {
+        "count": 0,
+        "examples": []
+      },
+      "train__val": {
+        "count": 0,
+        "examples": []
+      },
+      "val__test_fixed": {
+        "count": 10000,
+        "examples": [
+          "bdd100k/val/b1c66a42-6f7d68ca.jpg",
+          "bdd100k/val/b1c81faa-3df17267.jpg",
+          "bdd100k/val/b1c81faa-c80764c5.jpg",
+          "bdd100k/val/b1c9c847-3bda4659.jpg",
+          "bdd100k/val/b1ca2e5d-84cf9134.jpg"
+        ]
+      }
+    },
+    "sizes": {
+      "test_fixed": 10000,
+      "train": 62877,
+      "val": 16986
+    },
+    "test_disjoint_from_train_and_validation": false
+  },
+  "image_size": 224,
+  "max_train_batches": 0,
+  "max_val_batches": 0,
+  "metadata_dir": "data/metadata/bdd100k",
+  "min_lr": 1e-06,
+  "no_pretrained": false,
+  "num_workers": 8,
+  "original_training_source": "baseline/bdd100k_moe_train.py",
+  "original_training_source_sha256": "7923906763fe673115eaf60e442b5637a0428296629015ba26354d396dbb3a11",
+  "output_dir": "results/models/bdd100k/csa_disjoint_seed42",
+  "scene_to_id": {
+    "city street": 0,
+    "gas stations": 5,
+    "highway": 1,
+    "parking lot": 3,
+    "residential": 2,
+    "tunnel": 4
+  },
+  "seed": 42,
+  "stage": "stage3_moe",
+  "test_set_used_for_training_or_selection": false,
+  "time_to_id": {
+    "dawn/dusk": 2,
+    "daytime": 0,
+    "night": 1
+  },
+  "validation_audit": {
+    "historical_checkpoint_selection_repaired": false,
+    "original_validation_count": 16986,
+    "removed_train_or_test_overlap": 10000,
+    "retained_validation_count": 6986
+  },
+  "weather_to_id": {
+    "clear": 0,
+    "foggy": 4,
+    "overcast": 1,
+    "partly cloudy": 2,
+    "rainy": 3,
+    "snowy": 5
+  },
+  "weight_decay": 0.0001,
+  "weighted_sampling": false
+}

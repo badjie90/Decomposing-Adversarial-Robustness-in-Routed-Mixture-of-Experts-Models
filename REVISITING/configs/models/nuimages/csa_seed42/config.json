@@ -1,0 +1,51 @@
+{
+  "amp_dtype": "float16",
+  "backbone_lr": 2e-05,
+  "backbone_name": "convnextv2_tiny.fcmae_ft_in1k",
+  "batch_size": 32,
+  "command": "train",
+  "compile": false,
+  "condition_semantics": {
+    "scene": "illumination",
+    "time": "motion",
+    "weather": "location"
+  },
+  "device": "cuda:0",
+  "early_stopping_min_delta": 0.0001,
+  "early_stopping_patience": 10,
+  "epochs": 50,
+  "experiment_dir": "results/models/nuimages/csa_seed42",
+  "expert_lr": 0.0001,
+  "grad_clip_norm": 1.0,
+  "head_lr": 0.0001,
+  "image_size": 224,
+  "metadata_dir": "data/metadata/nuimages",
+  "min_lr": 1e-06,
+  "no_pretrained": false,
+  "num_workers": 8,
+  "object_semantics": {
+    "slot_0": "car",
+    "slot_1": "pedestrian",
+    "slot_2": "traffic_cone"
+  },
+  "resume": "",
+  "scene_to_id": {
+    "day": 0,
+    "night": 2,
+    "twilight": 1
+  },
+  "seed": 42,
+  "stage": "stage3_moe",
+  "time_to_id": {
+    "fast": 2,
+    "stopped": 0,
+    "urban": 1
+  },
+  "weather_to_id": {
+    "boston-seaport": 0,
+    "singapore-onenorth": 1,
+    "singapore-queenstown": 2
+  },
+  "weight_decay": 0.0001,
+  "weighted_sampling": false
+}

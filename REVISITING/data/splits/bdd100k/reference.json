@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "dataset": "bdd100k",
+  "mappings": {
+    "weather_to_id": {
+      "clear": 0,
+      "overcast": 1,
+      "partly cloudy": 2,
+      "rainy": 3,
+      "foggy": 4,
+      "snowy": 5
+    },
+    "scene_to_id": {
+      "city street": 0,
+      "highway": 1,
+      "residential": 2,
+      "parking lot": 3,
+      "tunnel": 4,
+      "gas stations": 5
+    },
+    "time_to_id": {
+      "daytime": 0,
+      "night": 1,
+      "dawn/dusk": 2
+    }
+  },
+  "splits": {
+    "train": {
+      "n_images": 62877,
+      "ordered_ids_sha256": "77fad14cfda324f68bff32e84f94510e05dc2ca943a50251377d792a7d6df75d",
+      "canonical_labels_sha256": "101fea05d988da1ce57511886fc66414066b29829206d965bc7bed5925a9672f"
+    },
+    "val": {
+      "n_images": 16986,
+      "ordered_ids_sha256": "23079884de9f505ee91dee6c59e71ba3c893305fbb0a3d6b6b7862f57e11f259",
+      "canonical_labels_sha256": "0fb398464b1e7787d53720909620c2feb95defad8facebaf6ab48c5da0d4dbbb"
+    },
+    "test_fixed": {
+      "n_images": 10000,
+      "ordered_ids_sha256": "13c04704147c82cb86cec3f13fe2b0af6ca80a87b7ce3584b7dbca8d05e03018",
+      "canonical_labels_sha256": "c45e0af2b38b05a6cb241f9f0f72595385f3bd2dc6bcc60ae72a5145ddd10e02"
+    }
+  }
+}

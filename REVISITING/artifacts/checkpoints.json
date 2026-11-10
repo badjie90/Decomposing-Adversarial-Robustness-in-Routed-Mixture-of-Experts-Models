@@ -1,0 +1,145 @@
+{
+  "bundle": {
+    "bytes": 341469556,
+    "filename": "checkpoints.tar.gz",
+    "sha256": "fc4ff7dd106a64c6fe37a827907ddec939b4d8e7a45e085b15316866e6ee2cf9"
+  },
+  "checkpoints": [
+    {
+      "architecture": "csa_gmoe",
+      "checkpoint": "results/models/bdd100k/csa_disjoint_seed42/checkpoints/best.pt",
+      "config": "results/models/bdd100k/csa_disjoint_seed42/config.json",
+      "dataset": "bdd100k",
+      "epoch_index_base": 1,
+      "id": "bdd100k-csa",
+      "original_checkpoint_reference": "Revision-Adv-Evaluation-ESWA/revised_experiments/results/models/bdd100k/csa_disjoint_seed42/checkpoints/best.pt",
+      "original_checkpoint_sha256": "67fb60bc6ba37637d50b5fbeba2a4aac193343a3e3bfe44c65ccb0164a810a37",
+      "release_checkpoint_sha256": "a1de10bc8584b764b331a5f1e9a15fe0067f96e709e49cbf088417279956ec2d",
+      "removed_fields": [
+        "best_validation_macro_auroc",
+        "config",
+        "epoch"
+      ],
+      "repository_config": "configs/models/bdd100k/csa_disjoint_seed42/config.json",
+      "selected_epoch": 3,
+      "state_tensors": 264,
+      "tensor_equality_verified": true,
+      "training_seed": 42
+    },
+    {
+      "architecture": "custom_sparse_token_moe",
+      "checkpoint": "results/models/bdd100k/sparse_seed42/checkpoints/best.pt",
+      "config": "results/models/bdd100k/sparse_seed42/config.json",
+      "dataset": "bdd100k",
+      "epoch_index_base": 1,
+      "id": "bdd100k-sparse",
+      "original_checkpoint_reference": "Revision-Adv-Evaluation-ESWA/revised_experiments/results/models/bdd100k/sparse_seed42/checkpoints/best.pt",
+      "original_checkpoint_sha256": "3b9a162b02bc91c7decc9d57597af8c8db97fd7c10d25ef6a44e873ff02d134b",
+      "release_checkpoint_sha256": "3378da69215fc712a2b59f79705ba0f96b9d246bedf944fd7f284a35bf4e4d4e",
+      "removed_fields": [
+        "config",
+        "epoch",
+        "validation_audit"
+      ],
+      "repository_config": "configs/models/bdd100k/sparse_seed42/config.json",
+      "selected_epoch": 18,
+      "state_tensors": 59,
+      "tensor_equality_verified": true,
+      "training_seed": 42
+    },
+    {
+      "architecture": "csa_gmoe",
+      "checkpoint": "results/models/nuimages/csa_seed42/checkpoints/best.pt",
+      "config": "results/models/nuimages/csa_seed42/config.json",
+      "dataset": "nuimages",
+      "epoch_index_base": 0,
+      "id": "nuimages-csa",
+      "original_checkpoint_reference": "Baseline/Nuimages/experiments/nuimages_moe_stage3/checkpoints/best.pt",
+      "original_checkpoint_sha256": "12b18be642aeb33e5a36924d96a61724e7c4e3b2dc6cd25b9f580a072a879f78",
+      "release_checkpoint_sha256": "f5d2d7093713d62594513f4ea7fbe9f02c965d4bf64668b92f5dabf8148b40c4",
+      "removed_fields": [
+        "best_metric",
+        "config",
+        "epoch",
+        "optimizer",
+        "scheduler"
+      ],
+      "repository_config": "configs/models/nuimages/csa_seed42/config.json",
+      "selected_epoch": 3,
+      "state_tensors": 264,
+      "tensor_equality_verified": true,
+      "training_seed": 42
+    },
+    {
+      "architecture": "custom_sparse_token_moe",
+      "checkpoint": "results/models/nuimages/sparse_seed42/checkpoints/best.pt",
+      "config": "results/models/nuimages/sparse_seed42/config.json",
+      "dataset": "nuimages",
+      "epoch_index_base": 1,
+      "id": "nuimages-sparse",
+      "original_checkpoint_reference": "Revision-Adv-Evaluation-ESWA/revised_experiments/results/models/nuimages/sparse_seed42/checkpoints/best.pt",
+      "original_checkpoint_sha256": "82eeddf3b10974732b7e98d6d1ee351fd67695034c036d1ad14f5d6ef4fbe042",
+      "release_checkpoint_sha256": "703216512dd6a3b9a8fa931f06362304aaa4c4a62b0e377edb28a5aacfe3a0fb",
+      "removed_fields": [
+        "config",
+        "epoch",
+        "validation_audit"
+      ],
+      "repository_config": "configs/models/nuimages/sparse_seed42/config.json",
+      "selected_epoch": 22,
+      "state_tensors": 59,
+      "tensor_equality_verified": true,
+      "training_seed": 42
+    }
+  ],
+  "files": [
+    {
+      "bytes": 180159493,
+      "path": "results/models/bdd100k/csa_disjoint_seed42/checkpoints/best.pt",
+      "sha256": "a1de10bc8584b764b331a5f1e9a15fe0067f96e709e49cbf088417279956ec2d"
+    },
+    {
+      "bytes": 2129,
+      "path": "results/models/bdd100k/csa_disjoint_seed42/config.json",
+      "sha256": "8003b4d55a2c3383f40bb782278cad20ecb25bfa5e7fb9df91505bb6f20f03e9"
+    },
+    {
+      "bytes": 4213551,
+      "path": "results/models/bdd100k/sparse_seed42/checkpoints/best.pt",
+      "sha256": "3378da69215fc712a2b59f79705ba0f96b9d246bedf944fd7f284a35bf4e4d4e"
+    },
+    {
+      "bytes": 622,
+      "path": "results/models/bdd100k/sparse_seed42/config.json",
+      "sha256": "4dfa342238283c8cf97fd1f51ee00c0f017d3f67d87006980dbbf33f1b49cb30"
+    },
+    {
+      "bytes": 180147205,
+      "path": "results/models/nuimages/csa_seed42/checkpoints/best.pt",
+      "sha256": "f5d2d7093713d62594513f4ea7fbe9f02c965d4bf64668b92f5dabf8148b40c4"
+    },
+    {
+      "bytes": 1113,
+      "path": "results/models/nuimages/csa_seed42/config.json",
+      "sha256": "7c85f9b729d42a0232a27ff42ddd0e323ff22e6a3f9a9ab38856982fd9fa4e64"
+    },
+    {
+      "bytes": 4213551,
+      "path": "results/models/nuimages/sparse_seed42/checkpoints/best.pt",
+      "sha256": "703216512dd6a3b9a8fa931f06362304aaa4c4a62b0e377edb28a5aacfe3a0fb"
+    },
+    {
+      "bytes": 623,
+      "path": "results/models/nuimages/sparse_seed42/config.json",
+      "sha256": "bb1fe442229c7f334b80ec7d8961ca732d9a969ee06c5ec4eb65fc72fba31dc3"
+    }
+  ],
+  "notes": [
+    "Selected inference checkpoints with unchanged model tensors. Optimizer, scheduler, and embedded private training configuration were removed.",
+    "CSA payloads contain the model state. Sparse payloads also contain the model construction parameters and dataset name.",
+    "The state of every tensor was compared with the original checkpoint using torch.equal. File hashes differ because the serialized payload changed.",
+    "Training configurations preserve numerical settings and class mappings. Local absolute paths were replaced with repository-relative paths.",
+    "Weights are distributed separately from the GitHub source tree. No public download URL is asserted in this manifest."
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "dataset": "nuimages",
+  "mappings": {
+    "weather_to_id": {
+      "boston-seaport": 0,
+      "singapore-onenorth": 1,
+      "singapore-queenstown": 2
+    },
+    "scene_to_id": {
+      "day": 0,
+      "twilight": 1,
+      "night": 2
+    },
+    "time_to_id": {
+      "stopped": 0,
+      "urban": 1,
+      "fast": 2
+    }
+  },
+  "splits": {
+    "train": {
+      "n_images": 60552,
+      "ordered_ids_sha256": "2fee638e292080df589a9805b6d77f8ca4272cd8de299da0f597d97192954a2a",
+      "canonical_labels_sha256": "7dd0f41d7131f5243d4e0d07d5f23d5c92a3fb5655ea8180086695dbf049dadc"
+    },
+    "val": {
+      "n_images": 6727,
+      "ordered_ids_sha256": "0d017a9faf1c340a00f6c989d0555ad2d0991bbfd7188346dcd0dfe4f2911a33",
+      "canonical_labels_sha256": "3612b8ac6ab82529ffe8eb3524534cc9d80d443f30204f6890b484c24bf7fd48"
+    },
+    "test_fixed": {
+      "n_images": 16445,
+      "ordered_ids_sha256": "21caf84fb56accd8d166d6b50c7298f879695f34c407c225a5e02638691ab934",
+      "canonical_labels_sha256": "cc1703a0ca96b4bb303bacbc471aa45b2c6e68ab7356cedcea70d47dc808d805"
+    }
+  }
+}

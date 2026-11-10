@@ -1,0 +1,14 @@
+# Versions used for the reported evaluation. Install the CUDA or CPU torch wheels first.
+torch==2.8.0
+torchvision==0.23.0
+timm==1.0.28
+torchmetrics==1.8.2
+numpy==1.26.4
+pandas==2.3.3
+scikit-learn==1.6.1
+scipy==1.13.1
+matplotlib==3.9.4
+Pillow==11.3.0
+pytest==8.3.2
+# Used when the operating system does not supply the IANA timezone database.
+tzdata>=2025.2

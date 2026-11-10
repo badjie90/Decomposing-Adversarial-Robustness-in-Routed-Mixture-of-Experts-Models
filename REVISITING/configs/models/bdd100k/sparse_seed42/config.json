@@ -1,0 +1,33 @@
+{
+  "balance_weight": 0.01,
+  "batch_size": 64,
+  "dataset": "bdd100k",
+  "depth": 2,
+  "device": "cuda:0",
+  "dropout": 0.1,
+  "early_stopping_patience": 10,
+  "embed_dim": 128,
+  "epochs": 50,
+  "image_size": 224,
+  "lr": 0.0003,
+  "max_train_batches": 0,
+  "max_val_batches": 0,
+  "model_config": {
+    "depth": 2,
+    "dropout": 0.1,
+    "embed_dim": 128,
+    "image_size": 224,
+    "num_classes": 3,
+    "num_experts": 4,
+    "num_heads": 4,
+    "patch_size": 16,
+    "top_k": 2
+  },
+  "num_experts": 4,
+  "num_heads": 4,
+  "num_workers": 8,
+  "patch_size": 16,
+  "seed": 42,
+  "top_k": 2,
+  "weight_decay": 0.0001
+}

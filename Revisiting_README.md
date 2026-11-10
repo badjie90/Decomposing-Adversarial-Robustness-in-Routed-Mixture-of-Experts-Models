@@ -22,7 +22,7 @@ The sparse model is not V-MoE or Switch. The interventions separate routing from
 
 The completed release checks are recorded in [validation notes](docs/VALIDATION.md). Run `sha256sum -c SHA256SUMS` to verify the prepared source files before changing them.
 
-Images, annotations, weights, response banks, and raw attack outputs are excluded from Git. Selected weights are packaged separately as `checkpoints.tar.gz`. The authors must attach this file to a public release or archive before claiming that the checkpoints are publicly available. No public asset URL is embedded in this source package.
+Images, annotations, weights, response banks, and raw attack outputs are excluded from Git. Selected weights are packaged separately as `checkpoints.tar.gz`.
 
 ## 1. Install the environment
 
@@ -217,7 +217,7 @@ The transfer implementation stores acquisition images in float16. The worker tha
 
 The primary pixel-space `Linf` budget is `8/255`. Sensitivity uses `2/255`, `4/255`, `8/255`, and `0.09`. Five attack or surrogate seeds are `42` through `46`. Target models use one training seed.
 
-Direct attacks count every queried image, including clean references and initialization. Query results at 100, 250, 500, and 1,000 are prefixes of the same trajectory. HSJ may query outside the perturbation ball during boundary search, but its returned adversarial example must satisfy the bound. Transfer uses a shared 2,000-image acquisition bank and makes no target calls during subsequent PGD generation. The acquisition response contains both the route label and fused probabilities.
+Direct attacks count every queried image, including clean references and initialization. Query results at 100, 250, 500, and 1,000 are prefixes of the same trajectory. HSJ may query points outside the perturbation ball during boundary search, but the returned adversarial example must still satisfy the bound. Transfer uses a shared 2,000-image acquisition bank and makes no target calls during subsequent PGD generation. The acquisition response contains both the route label and fused probabilities.
 
 Bootstrap intervals resample paired image IDs while holding the five observed runs fixed. Between-run SD separately measures attack or surrogate variation. Neither quantity estimates target-model training variability. See `configs/protocol.json` for the recorded settings.
 
